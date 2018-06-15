@@ -79,22 +79,36 @@ def send():
         responses.append("Never. Wear your individuality as a badge of honor.")
         responses.append("Never. I can't believe it. It is such a good name. No, I'm not being sarcastic at all.")
         responses.append("Never. I had a cousin with this name, so there's that.")
+        responses.append("Never. Just . . . never.")
 
-        if len(years["boys"])==0:
+        gender = ""
+        answer = []
+        if (len(years["boys"])==0 and len(years["girls"])==0):
             which_resp = np.random.randint(len(responses))
-            years["boys"]=responses[which_resp]
-            #years["boys"]="Never. Now is the time to start advocating for this name!"
-        if len(years["girls"])==0:
-            which_resp = np.random.randint(len(responses))
-            years["girls"]=responses[which_resp]
-        #print(years["boys"])
-
+            answer=responses[which_resp]
+            gender="boy or girl"
+        else:
+            if len(years["boys"])==0:
+                which_resp = np.random.randint(len(responses))
+                for i in years["girls"]:
+                    answer.append(i[0])
+                gender = "girl"
+            if len(years["girls"])==0:
+                which_resp = np.random.randint(len(responses))
+                for i in years["boys"]:
+                    answer.append(i[0])
+                #answer=years["boys"]
+                gender = "boy"
+        
+        
         #return render_template('index.html', {'boys': years["boys"],'girls': years["girls"]})
         #return render_template("http://localhost:5000/", {'boys': years["boys"],'girls': years["girls"]})
         #return redirect("http://localhost:5000/", code=302)
         #return redirect("index.html", code=302)
         #return redirect("http://localhost:5000/", {'boys': years["boys"],'girls': years["girls"]})
-        return render_template('index.html', name=name, boys=years["boys"], girls=years["girls"])
+        
+        #return render_template('index.html', name=name, boys=years["boys"], girls=years["girls"])
+        return render_template('index.html', name=name, answer=answer, gender = gender)
 
 #This part said render form.html in the pet pals thing
     return render_template("index.html")
