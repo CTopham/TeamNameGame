@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Do I need to bring anything over from the pet pals form.html?-->
+  <!--Here is all the pet pals stuff. The index.html was fine without this, but I could not run the app.py-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Happy Babies</title>
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <!--END OF PET PALS IMPORT-->
+
+  
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sweet, sweet, baby names</title>
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <script src="https://unpkg.com/simple-statistics@5.0.0/dist/simple-statistics.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <style>
+    body {
+      background-color: unset;
+    }
+/* table {
+    border-collapse: collapse;
+    width: 100%;
+} */
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+tbody>tr:nth-child(even){background-color: #f2f2f2 !important}
+tbody>tr:nth-child(odd){background-color: #fff !important}
+/* th {
+  background-color: #2f3439;
+  color: white;
+} */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>
+        Baby Name Mania!!!
+        <!--<span >2018</span>-->
+      </h1>
+      <p></p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div class="panel-body">
+            Find Your Name
+          </div>
+        </div>
+        <div class="company">
+          Do you think your name was popular in the United States over the past 130 years? This is your chance to find out!
+          Enter your name, cross your fingers, and see if a decent amount of people thought your name was worthy enough to slap on 
+          their baby. 
+        </div>
+        <div class="company">
+            Fine print: Section I. We are looking at the the top 10 names only. If your names falls out of the top ten, 
+            we declare it UNPOPULAR. Sorry if that seems harsh. Section II. We are searching the turn of the decades only. 
+            Again, if that seems harsh, we apologize. Please donate to our team and we will be glad to run this project on 
+            a bigger, more powerful server. Then we will declare your name not necessarily the most popular, 
+            but the most revered.
+          </div>
+      </div>
+      <div class="col-md-8">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            Happy Babies
+          </div>
+        </div>
+        <!--<div id="plot"></div>-->
+        <img src="/static/css/Happy_Babies.jpg">
+      </div>
+    </div>
+
+    <!--from the pet pals-->
+    <div class="container">
+      <!--<div class="jumbotron" style="text-align: center">
+          <h1>Pet Pal</h1>
+          <p>Enter your pet's details below!</p>
+      </div>-->
+      <div class="row">
+          <div class="col-md-offset-2 col-md-8">
+              <form method="POST" action="/send" role="form", name="petform">
+                  <div class="form-group">
+                      <label for="inputName">What name would you like to find?</label>
+                      <input type="text" class="form-control" id="inputName" name="findName" placeholder="Name">
+                  </div>
+
+                  <input type="submit" value="submit" class="btn btn-default">
+              </form>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <!--<p class="result_text">{{name}} was a popular boy name in: {{boys}}</p>
+          <p class="result_text">{{name}} was a popular girl name in: {{girls}}</p>-->
+          <p class="result_text">{{name}} was a popular {{gender}} name in: {{answer}}</p>
+
+        </div>
+      </div>
+
+  </div>
+<!--done with the pet pals part-->
+
+<!--
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <table id="summary-table" class="table table-striped table-inverse">
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Male Name</th>
+              <th>Number of boy babies with the name</th>
+              <th>Female Names</th>
+              <th>Number of girl babies with the name</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>-->
+
+
+  <script src="plots.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=500" />
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	    crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+	    crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	    crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="./ScrollMagic.js"></script>
+	<script type="text/javascript" src="./debug.addIndicators.js"></script>
+	<link rel="stylesheet" href="stylea.css">
+</head>
+
+<body>
+	<div>
+		<div>
+			<div class="container">
+				<div class="jumbotron center">
+					<img class="img-responsive hero-image" src="babies_scrollpage_3.jpg" alt="a">
+				</div>
+				<!-- <div id="trigger1" class="row">
+					<div class="col-md-3">
+						<p>If we go back in time, we find in the United States names very close to the most frequent worn today.</p>
+						<p>Thus, <strong>in 1880, the ten male first names most given </strong> to babies of the year were: </p>
+						<p> <strong>John, William, James, Charles, George, Frank, Joseph, Thomas, Henry, Robert.</strong></p> 
+						<p>Except for Frank and Henry, all are still in the current list of the twenty most common first names.</p>
+					</div>
+					<div class="col-md-3">
+						<div id="pin1">
+							<img width="250" class="img-thumbnail img-responsive" src="top20male1880.png" alt="">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div id="pin1a">
+							<img width="250" class="img-thumbnail img-responsive" src="top20female1880.png" alt="">
+						</div>
+					</div>
+					<div class="col-md-3">
+							<p> The first names most given to girls in 1880 in the United States are still well represented today or have even returned to fashion, with the exception of German names, in decline (as Frank for boys) since the wars world.</p>
+							<p>The ten most given female names in 1880 in the United States were:</p>
+							<p> <strong>Mary, Anna, Emma, Elizabeth, Minnie, Margaret, Ida, Alice, Bertha, Sarah.</strong></p>
+						</div>
+					
+				</div> -->
+				 <div id="trigger1" class="row">
+					<div class="col-md-6">
+						<div class='pin-child' id='pin1a'>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, veritatis non tempora numquam necessitatibus quia optio
+						architecto, ex perferendis accusamus qui dolorum at voluptatibus nulla. Laborum odio harum dignissimos. Sint? Nisi
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div id="pin1b" class='pin-child'>
+							<img width="250" class="img-thumbnail img-responsive" src="top20male1880.png" alt="">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div id="pin1c" class='pin-child'>
+							<img width="250" class="img-thumbnail img-responsive" src="top20female1880.png" alt="">
+						</div>
+					</div>
+
+				</div>
+				<div id="trigger2" class="row">
+						<div class="col-md-6">
+						<div id='pin2a' class='pin-child'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, veritatis non tempora numquam necessitatibus quia optio
+							architecto, ex perferendis accusamus qui dolorum at voluptatibus nulla. Laborum odio harum dignissimos. Sint? Nisi
+						</div>
+						</div>
+						<div class="col-md-3">
+							<div id="pin2b" class='pin-child'>
+								<img width="250" class="img-thumbnail img-responsive" src="top20male1890.png" alt="">
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div id="pin2c" class='pin-child'>
+								<img width="250" class="img-thumbnail img-responsive" src="top20female1890.png" alt="">
+							</div>
+						</div>
+	
+					</div>
+					<div id="trigger3" class="row">
+							<div class="col-md-6">
+							<div id='pin3a' class='pin-child'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, veritatis non tempora numquam necessitatibus quia optio
+								architecto, ex perferendis accusamus qui dolorum at voluptatibus nulla. Laborum odio harum dignissimos. Sint? Nisi
+							</div>
+							</div>
+							<div class="col-md-3">
+								<div id="pin3b" class='pin-child'>
+									<img width="250" class="img-thumbnail img-responsive" src="top20male1900.png" alt="">
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div id="pin3c" class='pin-child'>
+									<img width="250" class="img-thumbnail img-responsive" src="top20female1900.png" alt="">
+								</div>
+							</div>
+		
+						</div>
+					<div id="trigger4" class="row">
+							<div class="col-md-6">
+							<div id='pin4a' class='pin-child'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, veritatis non tempora numquam necessitatibus quia optio
+									architecto, ex perferendis accusamus qui dolorum at voluptatibus nulla. Laborum odio harum dignissimos. Sint? Nisi
+							</div>
+							</div>
+							<div class="col-md-3">
+								<div id="pin4b" class='pin-child'>
+									<img width="250" class="img-thumbnail img-responsive" src="top20male1910.png" alt="">
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div id="pin4c" class='pin-child'>
+									<img width="250" class="img-thumbnail img-responsive" src="top20female1910.png" alt="">
+								</div>
+							</div>
+			
+						</div>
+							<div id="trigger5" class="row">
+									<div class="col-md-6">
+									<div id='pin5a' class='pin-child'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, veritatis non tempora numquam necessitatibus quia optio
+										architecto, ex perferendis accusamus qui dolorum at voluptatibus nulla. Laborum odio harum dignissimos. Sint? Nisi
+									</div>
+									</div>
+									<div class="col-md-3">
+										<div id="pin5b" class='pin-child'>
+											<img width="250" class="img-thumbnail img-responsive" src="top20male1920.png" alt="">
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div id="pin5c" class='pin-child'>
+											<img width="250" class="img-thumbnail img-responsive" src="top20female1920.png" alt="">
+										</div>
+									</div>
+				
+								</div>
+								<div id="trigger6" class="row">
+										<div class="col-md-6">
+										<div id='pin6a' class='pin-child'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, veritatis non tempora numquam necessitatibus quia optio
+											architecto, ex perferendis accusamus qui dolorum at voluptatibus nulla. Laborum odio harum dignissimos. Sint? Nisi
+										</div>
+										</div>
+										<div class="col-md-3">
+											<div id="pin6b" class='pin-child'>
+												<img width="250" class="img-thumbnail img-responsive" src="top20male1930.png" alt="">
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div id="pin6c" class='pin-child'>
+												<img width="250" class="img-thumbnail img-responsive" src="top20female1930.png" alt="">
+											</div>
+										</div>
+					
+									</div>
+									<div id="trigger7" class="row">
+											<div class="col-md-6">
+											<div id='pin7a' class='pin-child'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, veritatis non tempora numquam necessitatibus quia optio
+												architecto, ex perferendis accusamus qui dolorum at voluptatibus nulla. Laborum odio harum dignissimos. Sint? Nisi
+											</div>
+											</div>
+											<div class="col-md-3">
+												<div id="pin7b" class='pin-child'>
+													<img width="250" class="img-thumbnail img-responsive" src="top20male1940.png" alt="">
+												</div>
+											</div>
+											<div class="col-md-3">
+												<div id="pin7c" class='pin-child'>
+													<img width="250" class="img-thumbnail img-responsive" src="top20female1940.png" alt="">
+												</div>
+											</div>
+						
+										</div>
+										<div id="trigger8" class="row">
+												<div class="col-md-6">
+												<div id='pin8a' class='pin-child'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, veritatis non tempora numquam necessitatibus quia optio
+													architecto, ex perferendis accusamus qui dolorum at voluptatibus nulla. Laborum odio harum dignissimos. Sint? Nisi
+												</div>
+												</div>
+												<div class="col-md-3">
+													<div id="pin8b" class='pin-child'>
+														<img width="250" class="img-thumbnail img-responsive" src="top20male1950.png" alt="">
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div id="pin8c" class='pin-child'>
+														<img width="250" class="img-thumbnail img-responsive" src="top20female1950.png" alt="">
+													</div>
+												</div>
+							
+											</div>
+											<div id="trigger9" class="row">
+													<div class="col-md-6">
+													<div id='pin9a' class='pin-child'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, veritatis non tempora numquam necessitatibus quia optio
+														architecto, ex perferendis accusamus qui dolorum at voluptatibus nulla. Laborum odio harum dignissimos. Sint? Nisi
+													</div>
+													</div>
+													<div class="col-md-3">
+														<div id="pin9b" class='pin-child'>
+															<img width="250" class="img-thumbnail img-responsive" src="top20male1960.png" alt="">
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div id="pin9c" class='pin-child'>
+															<img width="250" class="img-thumbnail img-responsive" src="top20female1960.png" alt="">
+														</div>
+													</div>
+								
+												</div>
+												<div id="trigger10" class="row">
+														<div class="col-md-6">
+														<div id='pin10a' class='pin-child'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, veritatis non tempora numquam necessitatibus quia optio
+															architecto, ex perferendis accusamus qui dolorum at voluptatibus nulla. Laborum odio harum dignissimos. Sint? Nisi
+														</div>
+														</div>
+														<div class="col-md-3">
+															<div id="pin10b" class='pin-child'>
+																<img width="250" class="img-thumbnail img-responsive" src="top20male1970.png" alt="">
+															</div>
+														</div>
+														<div class="col-md-3">
+															<div id="pin10c" class='pin-child'>
+																<img width="250" class="img-thumbnail img-responsive" src="top20female1970.png" alt="">
+															</div>
+														</div>
+									
+													</div>
+
+													<div id="trigger11" class="row">
+															<div class="col-md-6">
+															<div id='pin11a' class='pin-child'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, veritatis non tempora numquam necessitatibus quia optio
+																architecto, ex perferendis accusamus qui dolorum at voluptatibus nulla. Laborum odio harum dignissimos. Sint? Nisi
+															</div>
+															</div>
+															<div class="col-md-3">
+																<div id="pin11b" class='pin-child'>
+																	<img width="250" class="img-thumbnail img-responsive" src="top20male1980.png" alt="">
+																</div>
+															</div>
+															<div class="col-md-3">
+																<div id="pin11c" class='pin-child'>
+																	<img width="250" class="img-thumbnail img-responsive" src="top20female1980.png" alt="">
+																</div>
+															</div>
+										
+														</div>
+
+													<div id="trigger12" class="row">
+															<div class="col-md-6">
+															<div id='pin12a' class='pin-child'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, veritatis non tempora numquam necessitatibus quia optio
+																	architecto, ex perferendis accusamus qui dolorum at voluptatibus nulla. Laborum odio harum dignissimos. Sint? Nisi
+															</div>
+															</div>
+																<div class="col-md-3">
+																	<div id="pin12b" class='pin-child'>
+																		<img width="250" class="img-thumbnail img-responsive" src="top20male1990.png" alt="">
+																	</div>
+																</div>
+																<div class="col-md-3">
+																	<div id="pin12c" class='pin-child'>
+																		<img width="250" class="img-thumbnail img-responsive" src="top20female1990.png" alt="">
+																	</div>
+																</div>
+											
+															</div>
+															<div id="trigger13" class="row">
+																	<div class="col-md-6">
+																	<div id='pin13a' class='pin-child'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, veritatis non tempora numquam necessitatibus quia optio
+																		architecto, ex perferendis accusamus qui dolorum at voluptatibus nulla. Laborum odio harum dignissimos. Sint? Nisi
+																	</div>
+																	</div>
+																	<div class="col-md-3">
+																		<div id="pin13b" class='pin-child'>
+																			<img width="250" class="img-thumbnail img-responsive" src="top20male2000.png" alt="">
+																		</div>
+																	</div>
+																	<div class="col-md-3">
+																		<div id="pin13c" class='pin-child'>
+																			<img width="250" class="img-thumbnail img-responsive" src="top20female2000.png" alt="">
+																		</div>
+																	</div>
+												
+																</div>
+																<div id="trigger14" class="row">
+																		<div class="col-md-6">
+																		<div id='pin14a' class='pin-child'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, veritatis non tempora numquam necessitatibus quia optio
+																			architecto, ex perferendis accusamus qui dolorum at voluptatibus nulla. Laborum odio harum dignissimos. Sint? Nisi
+																		</div>
+																		</div>
+																		<div class="col-md-3">
+																			<div id="pin14b" class='pin-child'>
+																				<img width="250" class="img-thumbnail img-responsive" src="top20male2010.png" alt="">
+																			</div>
+																		</div>
+																		<div class="col-md-3">
+																			<div id="pin14c" class='pin-child'>
+																				<img width="250" class="img-thumbnail img-responsive" src="top20female2010.png" alt="">
+																			</div>
+																		</div>
+													
+																	</div>
+
+			</div>
+				
+
+
+				<script>
+					var controller = new ScrollMagic.Controller();
+
+					$(function () {
+						var rows = $('.container .row');
+						rows.each(function(i, el) { // find all rows
+							var rowsChildren = $(el).find('.pin-child');
+							console.log($(el).attr('id'));
+							
+							rowsChildren.each(function(j, child) { // find all children of each row
+								console.log($(child).attr('id'));
+								var newScene = new ScrollMagic.Scene({
+									triggerElement: '#' + $(el).attr('id'),
+									duration: 1000
+								})
+								.setPin('#' + $(child).attr('id'))
+								.addTo(controller);
+							});
+						});
+						// var scene = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger1",
+						// 		duration: 100
+						// 	})
+						// 	.setPin("#pin1")
+						// 	.addTo(controller);
+
+
+						// var scene = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger1",
+						// 		duration: 100
+						// 	})
+						// 	.setPin("#pin1")
+						// 	.addTo(controller);
+
+						// var scene2 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger1",
+						// 		duration: 100
+						// 	})
+						// 	.setPin("#pin1a")
+						// 	.addTo(controller);
+
+						// var scene3 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger2",
+						// 		duration: 600
+						// 	})
+						// 	.setPin("#pin2")
+						// 	.addTo(controller);
+
+						// var scene4 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger2",
+						// 		duration: 600
+						// 	})
+						// 	.setPin("#pin2a")
+						// 	.addTo(controller);
+
+						// var scene5 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger3",
+						// 		duration: 700
+						// 	})
+						// 	.setPin("#pin3")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+
+						// var scene6 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger3",
+						// 		duration: 700
+						// 	})
+						// 	.setPin("#pin3a")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+						
+						// var scene7 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger4",
+						// 		duration: 1000
+						// 	})
+						// 	.setPin("#pin4")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+						
+						// var scene8 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger4",
+						// 		duration: 1000
+						// 	})
+						// 	.setPin("#pin4a")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+
+						// var scene9 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger5",
+						// 		duration: 1300
+						// 	})
+						// 	.setPin("#pin5")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+
+						// var scene10 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger5",
+						// 		duration: 1300
+						// 	})
+						// 	.setPin("#pin5a")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+						
+						// var scene11 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger6",
+						// 		duration: 1800
+						// 	})
+						// 	.setPin("#pin6")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+
+						// var scene12 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger6",
+						// 		duration: 1800
+						// 	})
+						// 	.setPin("#pin6a")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+
+						// var scene13 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger7",
+						// 		duration: 2100
+						// 	})
+						// 	.setPin("#pin7")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+
+						// var scene14 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger7",
+						// 		duration: 2100
+						// 	})
+						// 	.setPin("#pin7a")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+
+						// var scene15 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger8",
+						// 		duration: 2400
+						// 	})
+						// 	.setPin("#pin8")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+						
+						// var scene16 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger8",
+						// 		duration: 2400
+						// 	})
+						// 	.setPin("#pin8a")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+						
+						// var scene17 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger9",
+						// 		duration: 2700
+						// 	})
+						// 	.setPin("#pin9")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+
+						// var scene18 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger9",
+						// 		duration: 2700
+						// 	})
+						// 	.setPin("#pin9a")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+
+						// var scene19 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger10",
+						// 		duration: 2800
+						// 	})
+						// 	.setPin("#pin10")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+
+						// var scene20 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger10",
+						// 		duration: 2800
+						// 	})
+						// 	.setPin("#pin10a")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+
+						// var scene21 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger11",
+						// 		duration: 3100
+						// 	})
+						// 	.setPin("#pin11")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+						
+						// var scene22 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger11",
+						// 		duration: 3100
+						// 	})
+						// 	.setPin("#pin11a")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+
+						// var scene23 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger12",
+						// 		duration: 3400
+						// 	})
+						// 	.setPin("#pin12")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+
+						// var scene24 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger12",
+						// 		duration: 3400
+						// 	})
+						// 	.setPin("#pin12a")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+						
+						// // var scene25 = new ScrollMagic.Scene({
+						// // 		triggerElement: "#trigger13",
+						// // 		duration: 3700
+						// // 	})
+						// // 	.setPin("#pin13")
+						// // 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// // 	.addTo(controller);
+
+						// // var scene26 = new ScrollMagic.Scene({
+						// // 		triggerElement: "#trigger13",
+						// // 		duration: 3700
+						// // 	})
+						// // 	.setPin("#pin13a")
+						// // 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// // 	.addTo(controller);
+
+						// var scene27 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger14",
+						// 		duration: 3700
+						// 	})
+						// 	.setPin("#pin14")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+
+						// var scene28 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger14",
+						// 		duration: 3700
+						// 	})
+						// 	.setPin("#pin14a")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+
+						// var scene29 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger15",
+						// 		duration: 3700
+						// 	})
+						// 	.setPin('#pin999')
+						// 	.setPin("#pin15")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+
+						// var scene30 = new ScrollMagic.Scene({
+						// 		triggerElement: "#trigger15",
+						// 		duration: 3700
+						// 	})
+						// 	.setPin("#pin15a")
+						// 	// .addIndicators({name: "1 (duration: 900)"}) // add indicators (requires plugin)
+						// 	.addTo(controller);
+						
+					});
+				</script>
+
+
+			</div>
+</body>
+
+</html>
