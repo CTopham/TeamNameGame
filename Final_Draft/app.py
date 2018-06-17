@@ -42,15 +42,29 @@ class Baby (db.Model):
         return f"id={self.id}, name={self.name}"
 
 
+#@app.before_first_request
+#def setup():
+    # Recreate database each time for demo
+    #db.drop_all()
+    #db.create_all()
 
 
 # create route that renders index.html template
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("Cloud.html")
 
+@app.route("/table")
+def tablebaby():
+    return render_template("table.html")
 
+@app.route("/scroll")
+def scroll():
+    return render_template("lil_scroll.html")
 
+@app.route("/search")
+def baby():
+    return render_template("babysearch.html")
 
 # Query the database and send the jsonified results
 @app.route("/send", methods=["GET", "POST"])
@@ -93,8 +107,6 @@ def send():
                 gender = "boy"
         
 
-
-
         # Dependencies
         import tweepy
         import json
@@ -129,11 +141,11 @@ def send():
             #print(link)
 
         
-        return render_template('index.html', name=name, answer=answer, gender = gender, tweeting_name=a['full_text'],additional=link)
+        return render_template('babysearch.html', name=name, answer=answer, gender = gender, tweeting_name=a['full_text'],additional=link)
 
 #This part said render form.html in the pet pals thing
-    return render_template("index.html")
-    #return render_template('index.html', {'boys': years["boys"],'girls': years["girls"]})
+    return render_template("babysearch.html")
+    #return render_template('babysearch.html', {'boys': years["boys"],'girls': years["girls"]})
 
 
 if __name__ == "__main__":

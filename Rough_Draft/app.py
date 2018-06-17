@@ -52,7 +52,11 @@ class Baby (db.Model):
 # create route that renders index.html template
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("Cloud.html")
+
+@app.route("/table")
+def tablebaby():
+    return render_template("table.html")
 
 @app.route("/scroll")
 def scroll():
@@ -60,7 +64,7 @@ def scroll():
 
 @app.route("/search")
 def baby():
-    return render_template("Cleaned/Scroll_file/babysearch.html")
+    return render_template("babysearch.html")
 
 
 # Query the database and send the jsonified results
@@ -120,7 +124,6 @@ def send():
     return render_template("babysearch.html")
     #return render_template('index.html', {'boys': years["boys"],'girls': years["girls"]})
 
-
 # @app.route("/api/pals")
 # def pals():
 #     results = db.session.query(Pet.type, func.count(Pet.type)).group_by(Pet.type).all()
@@ -137,12 +140,7 @@ def send():
 #     return jsonify(pet_data)
 
 
-# @app.route("/api/names")
-# def pets():
-#     results = db.session.query(Pet.name).all()
-#     print(results)
-#     all_pets = list(np.ravel(results))
-#     return jsonify(all_pets)
+
 
 if __name__ == "__main__":
     app.run()
