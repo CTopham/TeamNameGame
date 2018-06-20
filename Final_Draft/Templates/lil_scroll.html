@@ -16,7 +16,8 @@
 	    crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/static/ScrollMagic.js"></script>
 	<script type="text/javascript" src="static/debug.addIndicators.js"></script>
-	<link rel="stylesheet" href="/static/css/stylea.css">
+	
+	
 <!-- ============================================================================================================== -->
 <style>
 		h1 {
@@ -52,6 +53,14 @@ background-color: black;
 h1 {
 color:white;
 }
+
+ .jumbotron {
+    background-color: olivedrab;
+    position: absolute;
+    z-index: 1;
+ } 
+
+ 
 </style>
         <link rel="stylesheet" href="bootstrap.min.css">
         <script src="https://unpkg.com/simple-statistics@5.0.0/dist/simple-statistics.min.js"></script>
@@ -80,7 +89,7 @@ color:white;
 <!-- ============================================================================================================== -->
 </head>
 <body>
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container-fluid">
         
             
@@ -91,24 +100,23 @@ color:white;
                             <ul class="dropdown-menu"> -->
           
           <!--These links do NOTHING. We need to change the names to match the files-->
-                      <li><a style=padding-top:30px; href="/">Home</a></li>
-                      <li><a style=padding-left:40px;padding-top:30px href="search">Name Search</a></li>
-                      <li><a style=padding-right:50px;padding-left:50px;padding-top:30px href="scroll">Story Telling</a></li>
-                      <li><a style=padding-right:100px;padding-top:30px href="table">Data</a></li>
+                      <li><a style=padding-top:15px; href="/">Home</a></li>
+                      <li><a style=padding-left:40px;padding-top:15px href="search">Name Search</a></li>
+                      <li><a style=padding-right:50px;padding-left:50px;padding-top:15px href="scroll">Story Telling</a></li>
+                      <li><a style=padding-right:100px;padding-top:15px href="table">Data</a></li>
                     </ul>
                   </div>
                   <!-- /.navbar-collapse -->
                 </div>
               </nav>
-	<div>
-		<div>
-			<div class="container">
-					<div style="background-color: rgb(136, 221, 183) !important"  class="jumbotron">
-							<h1 style="color:darkslategray">
-								<b>
-									Time Travel Through Names
-								</b>
-								  </h1>
+			  <div class="container" style=padding-top:70px>
+				<div style="background-color: rgb(136, 221, 183) !important"  class="jumbotron">
+				  <h1 style="color:darkslategray">
+					  <b style="font-size: 50px">
+					Baby Names Through the Decades
+					  </b>
+				  </h1>
+			  
 				</div>
 
 				<div id="trigger1" class="row">
