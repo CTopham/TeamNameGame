@@ -1,4 +1,4 @@
-from Final_Draft.app import db
+from app import db
 import os
 
 # db.drop_all()
