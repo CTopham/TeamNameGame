@@ -53,6 +53,10 @@ class Baby (db.Model):
 @app.route("/")
 def home():
     return render_template("Cloud.html")
+    
+@app.route("/api")
+def api():
+    return jsonify("/static/data.js")
 
 @app.route("/table")
 def tablebaby():
