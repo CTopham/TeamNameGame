@@ -11,7 +11,7 @@ from flask import (
     jsonify,
     request,
     redirect)
-
+import tweepy
 from flask_sqlalchemy import SQLAlchemy
 
 #################################################
@@ -110,10 +110,6 @@ def send():
                 #answer=years["boys"]
                 gender = "boy"
         
-
-        # Dependencies
-        import tweepy
-        import json
 
         # Twitter API Keys
         consumer_key = "Ed4RNulN1lp7AbOooHa9STCoU"
